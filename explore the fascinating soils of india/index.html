@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Explore the Fascinating Soils of India</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1a6e3ed2-658e-8011-a97b-f1291730eeb7" class="page sans"><header><h1 class="page-title"><strong>Explore the Fascinating Soils of India</strong></h1><p class="page-description"></p></header><div class="page-body"><h2 id="1a6e3ed2-658e-80a8-9b17-dce06f8fb862" class=""><strong>Introduction</strong></h2><p id="1a6e3ed2-658e-804c-ac83-e55554e5acbf" class="">Understanding soil classification and types in India is vital for UPSC Geography Optional students. Soils are fundamental to agriculture, economy, and ecology—their characteristics shaped by parent material, climate, topography, and biological activity. Let&#x27;s explore India&#x27;s soil classification and distribution.</p><figure id="1a6e3ed2-658e-80eb-8716-e4950baeaeaa" class="image"><a href="image.png"><img style="width:709.9874877929688px" src="image.png"/></a></figure><h2 id="1a6e3ed2-658e-8095-ac81-e344e3017151" class=""><strong>Soil Classification</strong></h2><p id="1a6e3ed2-658e-8061-83fb-efde744ccc98" class="">Soils are classified based on their genesis, physical and chemical properties, and geographical distribution. Two primary classification systems are used:</p><p id="1a6e3ed2-658e-807b-9eb9-c2fec6ef8a5a" class=""><strong>1. Indian Council of Agricultural Research (ICAR) Classification</strong></p><p id="1a6e3ed2-658e-80d1-ab95-f505bf2b7240" class="">ICAR classifies Indian soils into eight major groups:</p><ul id="1a6e3ed2-658e-80a3-84d6-cec9f8189715" class="bulleted-list"><li style="list-style-type:disc"><strong>Alluvial Soils</strong></li></ul><ul id="1a6e3ed2-658e-808d-bcab-c6980dfa91e8" class="bulleted-list"><li style="list-style-type:disc"><strong>Black Soils</strong></li></ul><ul id="1a6e3ed2-658e-80cf-8e2c-dd9f9e8d88b7" class="bulleted-list"><li style="list-style-type:disc"><strong>Red Soils</strong></li></ul><ul id="1a6e3ed2-658e-80cd-b06e-cce6483f82c5" class="bulleted-list"><li style="list-style-type:disc"><strong>Laterite Soils</strong></li></ul><ul id="1a6e3ed2-658e-80f7-9e29-d6dde0a47c46" class="bulleted-list"><li style="list-style-type:disc"><strong>Mountain Soils</strong></li></ul><ul id="1a6e3ed2-658e-80dd-94ad-c438b0c46aaf" class="bulleted-list"><li style="list-style-type:disc"><strong>Desert Soils</strong></li></ul><ul id="1a6e3ed2-658e-80e9-b3d3-fa48d23e6e94" class="bulleted-list"><li style="list-style-type:disc"><strong>Saline and Alkaline Soils</strong></li></ul><ul id="1a6e3ed2-658e-80c9-bce6-e20fb804ee79" class="bulleted-list"><li style="list-style-type:disc"><strong>Peaty and Marshy Soils</strong></li></ul><p id="1a6e3ed2-658e-8043-a3d9-c8127602ca0d" class=""><strong>2. USDA Soil Taxonomy</strong></p><p id="1a6e3ed2-658e-8069-845b-e7425d3de2e7" class="">The USDA system classifies soils based on texture, moisture content, and temperature. India&#x27;s soils include orders such as Entisols, Inceptisols, Alfisols, and Vertisols.</p><figure id="1a6e3ed2-658e-80c0-bd2f-cd5391e1670e" class="image"><a href="image%201.png"><img style="width:710px" src="image%201.png"/></a></figure><h2 id="1a6e3ed2-658e-80a3-8653-db8509c72ed2" class=""><strong>Major Soils of India</strong></h2><h3 id="1a6e3ed2-658e-80cd-b426-cb3f4b844dd9" class=""><strong>1. Alluvial Soils</strong></h3><ul id="1a6e3ed2-658e-80d4-a6f2-cdbf95e90ad1" class="bulleted-list"><li style="list-style-type:disc"><strong>Distribution</strong>: Found in the Indo-Gangetic Plain, coastal plains, and river valleys.</li></ul><ul id="1a6e3ed2-658e-80da-a44a-fbeb5d7827c3" class="bulleted-list"><li style="list-style-type:disc"><strong>Formation</strong>: Formed by river-deposited sediments.</li></ul><ul id="1a6e3ed2-658e-8041-bc5b-d162b9a1e05a" class="bulleted-list"><li style="list-style-type:disc"><strong>Characteristics</strong>: Fertile, rich in potash and lime, deficient in nitrogen and phosphorus.</li></ul><ul id="1a6e3ed2-658e-803c-ae65-c4cda6208267" class="bulleted-list"><li style="list-style-type:disc"><strong>Crops</strong>: Rice, wheat, sugarcane, pulses, and oilseeds.</li></ul><h3 id="1a6e3ed2-658e-804e-b3b9-efca9eab94bb" class=""><strong>2. Black Soils (Regur Soils)</strong></h3><ul id="1a6e3ed2-658e-80de-befd-c7afe0b5a3ae" class="bulleted-list"><li style="list-style-type:disc"><strong>Distribution</strong>: Deccan Plateau regions of Maharashtra, Madhya Pradesh, Gujarat, Andhra Pradesh, and Karnataka.</li></ul><ul id="1a6e3ed2-658e-80d0-96e8-f8fd5e11a31f" class="bulleted-list"><li style="list-style-type:disc"><strong>Formation</strong>: Derived from basaltic rocks.</li></ul><ul id="1a6e3ed2-658e-8099-b4e4-c4090b751f3d" class="bulleted-list"><li style="list-style-type:disc"><strong>Characteristics</strong>: High clay content, moisture-retentive, rich in calcium carbonate, magnesium, and iron.</li></ul><ul id="1a6e3ed2-658e-804b-84de-ffcfef7f0f62" class="bulleted-list"><li style="list-style-type:disc"><strong>Crops</strong>: Cotton (hence &quot;cotton soil&quot;), sorghum, and groundnut.</li></ul><h3 id="1a6e3ed2-658e-803c-b7e4-dc44e3b88612" class=""><strong>3. Red Soils</strong></h3><ul id="1a6e3ed2-658e-8004-be7c-db0a8d5329ed" class="bulleted-list"><li style="list-style-type:disc"><strong>Distribution</strong>: Tamil Nadu, Karnataka, Andhra Pradesh, Odisha, Chhattisgarh, and parts of Maharashtra.</li></ul><ul id="1a6e3ed2-658e-8012-a22a-d6b66a2afb16" class="bulleted-list"><li style="list-style-type:disc"><strong>Formation</strong>: Weathering of crystalline and metamorphic rocks.</li></ul><ul id="1a6e3ed2-658e-8060-9383-ce9104f116a5" class="bulleted-list"><li style="list-style-type:disc"><strong>Characteristics</strong>: Reddish due to iron oxide, low in nitrogen, phosphorus, and organic matter.</li></ul><ul id="1a6e3ed2-658e-8059-910f-d6ef81c757c0" class="bulleted-list"><li style="list-style-type:disc"><strong>Crops</strong>: Millets, groundnut, and pulses.</li></ul><h3 id="1a6e3ed2-658e-808c-90c0-cfcf60c85b01" class=""><strong>4. Laterite Soils</strong></h3><ul id="1a6e3ed2-658e-8084-93ad-f239f6ac26ef" class="bulleted-list"><li style="list-style-type:disc"><strong>Distribution</strong>: Western Ghats, Eastern Ghats, parts of Karnataka, Kerala, and Meghalaya.</li></ul><ul id="1a6e3ed2-658e-8018-9256-ddc5caa45e06" class="bulleted-list"><li style="list-style-type:disc"><strong>Formation</strong>: Intense leaching from heavy rainfall.</li></ul><ul id="1a6e3ed2-658e-80ad-ae34-daa9ebaa0b62" class="bulleted-list"><li style="list-style-type:disc"><strong>Characteristics</strong>: Low fertility, acidic, rich in iron and aluminum.</li></ul><ul id="1a6e3ed2-658e-8059-bdfb-e08c69392c9a" class="bulleted-list"><li style="list-style-type:disc"><strong>Crops</strong>: Tea, coffee, cashew, and rubber.</li></ul><h3 id="1a6e3ed2-658e-8028-836c-f9897545043c" class=""><strong>5. Mountain Soils</strong></h3><ul id="1a6e3ed2-658e-80ac-980e-d8426adae139" class="bulleted-list"><li style="list-style-type:disc"><strong>Distribution</strong>: Himalayan regions, including Jammu &amp; Kashmir, Himachal Pradesh, Uttarakhand, Sikkim, and Arunachal Pradesh.</li></ul><ul id="1a6e3ed2-658e-80a3-8b59-dcb6c6fc2c49" class="bulleted-list"><li style="list-style-type:disc"><strong>Formation</strong>: Accumulation of organic matter in forested regions.</li></ul><ul id="1a6e3ed2-658e-80aa-b57a-d96dbe93d267" class="bulleted-list"><li style="list-style-type:disc"><strong>Characteristics</strong>: Poor in humus in snow-covered areas but fertile in valleys.</li></ul><ul id="1a6e3ed2-658e-803f-bde2-e67343f60645" class="bulleted-list"><li style="list-style-type:disc"><strong>Crops</strong>: Tea, fruits, and vegetables.</li></ul><h3 id="1a6e3ed2-658e-801f-a07c-fb059ab1f127" class=""><strong>6. Desert Soils</strong></h3><ul id="1a6e3ed2-658e-80a3-a4ec-d70f63985fc7" class="bulleted-list"><li style="list-style-type:disc"><strong>Distribution</strong>: Rajasthan, Gujarat, and parts of Haryana and Punjab.</li></ul><ul id="1a6e3ed2-658e-80b5-b54b-dcb3a08efba8" class="bulleted-list"><li style="list-style-type:disc"><strong>Formation</strong>: Formed under arid conditions with low rainfall.</li></ul><ul id="1a6e3ed2-658e-802b-a660-e2b0cd6fd6fd" class="bulleted-list"><li style="list-style-type:disc"><strong>Characteristics</strong>: Sandy, low in organic matter, saline, and alkaline.</li></ul><ul id="1a6e3ed2-658e-80a8-a972-c2439f9afc51" class="bulleted-list"><li style="list-style-type:disc"><strong>Crops</strong>: Millets, barley, and pulses with irrigation.</li></ul><h3 id="1a6e3ed2-658e-807a-9dd9-f6977a48695f" class=""><strong>7. Saline and Alkaline Soils</strong></h3><ul id="1a6e3ed2-658e-8015-ad63-e80defd8f244" class="bulleted-list"><li style="list-style-type:disc"><strong>Distribution</strong>: Arid and semi-arid regions of Uttar Pradesh, Punjab, Haryana, Rajasthan, and Gujarat.</li></ul><ul id="1a6e3ed2-658e-8064-8986-d3390e9e128b" class="bulleted-list"><li style="list-style-type:disc"><strong>Formation</strong>: Salt accumulation from high evaporation.</li></ul><ul id="1a6e3ed2-658e-80cc-911f-e0e06e0a75e2" class="bulleted-list"><li style="list-style-type:disc"><strong>Characteristics</strong>: Poor drainage, saline, unsuitable for traditional crops.</li></ul><ul id="1a6e3ed2-658e-80cd-be7e-ed95258dc2bb" class="bulleted-list"><li style="list-style-type:disc"><strong>Crops</strong>: Salt-tolerant crops like barley, cotton, and sugar beet.</li></ul><h3 id="1a6e3ed2-658e-801a-a5c6-c327953e1645" class=""><strong>8. Peaty and Marshy Soils</strong></h3><ul id="1a6e3ed2-658e-8029-ab49-d4ed8f7b56c5" class="bulleted-list"><li style="list-style-type:disc"><strong>Distribution</strong>: Kerala, coastal Odisha, and Sundarbans region of West Bengal.</li></ul><ul id="1a6e3ed2-658e-80e8-863d-dab7f10affc2" class="bulleted-list"><li style="list-style-type:disc"><strong>Formation</strong>: Organic matter accumulation in waterlogged areas.</li></ul><ul id="1a6e3ed2-658e-80a9-ae4a-e5666848f9fe" class="bulleted-list"><li style="list-style-type:disc"><strong>Characteristics</strong>: High organic content, acidic, water-retentive.</li></ul><ul id="1a6e3ed2-658e-80d6-9d5d-d220a8c3ee78" class="bulleted-list"><li style="list-style-type:disc"><strong>Crops</strong>: Suitable for paddy cultivation.</li></ul><figure id="1a6e3ed2-658e-8096-b33d-d9ce8fa1f913" class="image"><a href="image%202.png"><img style="width:710px" src="image%202.png"/></a></figure><h2 id="1a6e3ed2-658e-80ea-b388-c4c41022df88" class=""><strong>Factors Influencing Soil Formation in India</strong></h2><ol type="1" id="1a6e3ed2-658e-807e-9a22-d54fad2e919f" class="numbered-list" start="1"><li><strong>Parent Material</strong>: Determines mineral composition and texture.</li></ol><ol type="1" id="1a6e3ed2-658e-80a0-a6e4-c5c8516fadf3" class="numbered-list" start="2"><li><strong>Climate</strong>: Influences weathering, leaching, and organic matter decomposition.</li></ol><ol type="1" id="1a6e3ed2-658e-80f3-85ce-ef99ae523efe" class="numbered-list" start="3"><li><strong>Topography</strong>: Affects drainage and soil erosion.</li></ol><ol type="1" id="1a6e3ed2-658e-809e-9798-d515907b59e3" class="numbered-list" start="4"><li><strong>Biological Activity</strong>: Adds organic matter to the soil.</li></ol><ol type="1" id="1a6e3ed2-658e-801a-97a3-c1abde5e724a" class="numbered-list" start="5"><li><strong>Time</strong>: Determines soil profile maturity and development.</li></ol><h2 id="1a6e3ed2-658e-8013-9767-d4c1d467ef91" class=""><strong>Importance of Soil Conservation</strong></h2><p id="1a6e3ed2-658e-80ac-b8d0-d26a69635db1" class="">India&#x27;s diverse soils face threats from deforestation, overgrazing, improper agricultural practices, and industrial pollution. Sustainable conservation requires measures like afforestation, contour plowing, terrace farming, and integrated nutrient management.</p><p id="1a6e3ed2-658e-80e1-9128-ee30a85308e6" class="">For UPSC aspirants, understanding soil characteristics helps connect theory with practical applications in land use and agriculture. This knowledge is essential for both Prelims and Mains examinations.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
